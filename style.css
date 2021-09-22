@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 3px 20px 3px 20px;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+h1{
+    font-size: 35px;
+}
+
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1300px;
+    height: 960px;
+    align-items: center;
+}
+
+#coluna1{
+    width:600px;
+    float: left;
+  
+    padding: 20px;
+}
+
+#coluna2{
+    width:600px;
+    float: left;
+    padding: 20px;
+}
+
+.foto-perfil > img{
+    margin-left: 105px;
+    border-radius: 50%;
+}
+
+.nome{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 75px;
+    display: flex;
+   
+}
+
+.profissao{
+    font-size:  18px;
+    margin-left: 60px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.principais-competencias > ul{
+    margin-left: 25px;
+}
+
+.contato > ul{
+    margin-left: 0;
+    font-weight: bold; 
+    list-style-type: none;
+}
+
+.background{
+    background-color: rgba(21, 162, 96, 0.406);
+    padding:30px;
+    padding-top: 5px;
+
+}
+
+h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.historico-academico > h3{
+    margin-top: 12px;
+    
+}
+
+.historico-academico > ul{
+    margin-left: 25px;
+    list-style-type:disc;
+}
+
+h4{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: unset;
+}
+
+span{
+    font-weight: bold;
+    margin: 0;
+}
+
+.historico-profissional > h3{
+    margin-top: 18px;
+}
+
+.historico-academico > h2{
+    padding: 10px;
+    background-color: rgba(21, 162, 96, 0.406);
+}
+
+.historico-profissional > h2{
+    
+    padding: 10px;
+    background-color: rgba(21, 162, 96, 0.406);
+}
+
+img{
+    margin: 0;
+}
+
+h2 > img {
+    margin-right: 10px;
+    padding: 0;
+    
+}
