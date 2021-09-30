@@ -11,8 +11,7 @@ h1{
 }
 
 body{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: auto;
     width: 1300px;
     height: 960px;
     align-items: center;
@@ -29,6 +28,7 @@ body{
     width:600px;
     float: left;
     padding: 20px;
+
 }
 
 .foto-perfil > img{
@@ -67,7 +67,7 @@ h2 {
 
 .background{
     background-color: rgba(21, 162, 96, 0.406);
-    padding:30px;
+    padding: 31px;px;
     padding-top: 5px;
 
 }
