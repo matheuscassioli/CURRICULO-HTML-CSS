@@ -1,124 +1,264 @@
-*{
-    box-sizing: border-box;
-    margin: 3px 20px 3px 20px;
-    padding: 0;
-    font-family: sans-serif;
-
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-h1{
-    font-size: 35px;
+h1 {
+  font-size: 35px;
 }
 
-body{
-    margin: auto;
-    width: 1300px;
-    height: 960px;
-    align-items: center;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-#coluna1{
-    width:600px;
-    float: left;
-  
-    padding: 20px;
+#coluna1 {
+  width: 45%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#coluna2{
-    width:600px;
-    float: left;
-    padding: 20px;
-
+.img-pdf {
+  width: 50px;
+  margin-top: 10px;
+  position: absolute;
 }
 
-.foto-perfil > img{
-    margin-left: 105px;
-    border-radius: 50%;
+#coluna2 {
+  width: 45%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-height: 516px;
 }
 
-.nome{
-    font-weight: bold;
-    margin-top: 5px;
-    margin-left: 75px;
-    display: flex;
-   
+#coluna2 .historico-academico p {
+  margin-top: 6px;
 }
 
-.profissao{
-    font-size:  18px;
-    margin-left: 60px;
+#coluna2 .historico-academico p:nth-child(10) {
+  margin-bottom: 0px;
+}
+
+#coluna2 .historico-academico p:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.foto-perfil {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foto-perfil img {
+  border-radius: 50%;
+  width: 90%;
+  max-width: 400px;
+}
+
+.nome {
+  font-weight: bold;
+  text-align: center;
+}
+
+.nome > h1 {
+  width: 100%;
+  margin-bottom: 0px;
+  font-size: 40px;
+  margin-top: 8px;
+}
+
+.profissao {
+  font-size: 18px;
+  text-align: center;
 }
 
 h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.principais-competencias > ul{
-    margin-left: 25px;
+h2 img {
+  margin-right: 10px;
+  padding: 0;
 }
 
-.contato > ul{
-    margin-left: 0;
-    font-weight: bold; 
-    list-style-type: none;
+.principais-competencias ul {
+  list-style-type: none;
 }
 
-.background{
-    background-color: rgba(21, 162, 96, 0.406);
-    padding: 31px;
-    padding-top: 5px;
-
+.principais-competencias ul > li {
+  margin: 4px 0px;
 }
 
-h3{
-    font-size: 14px;
-    font-weight: bold;
+.contato ul {
+  margin-left: 0;
+  font-weight: bold;
 }
 
-.historico-academico > h3{
-    margin-top: 12px;
-    
+.background {
+  background-color: rgba(21, 162, 96, 0.406);
+  padding: 30px;
+  padding-top: 5px;
+  width: 100%;
 }
 
-.historico-academico > ul{
-    margin-left: 25px;
-    list-style-type:disc;
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
-h4{
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: unset;
+.contato p {
+  margin: 4px;
+  white-space: nowrap;
 }
 
-span{
-    font-weight: bold;
-    margin: 0;
+.contato p > a > img {
+  height: 20px;
 }
 
-.historico-profissional > h3{
-    margin-top: 18px;
+.contato p a img {
+  height: 20px;
 }
 
-.historico-academico > h2{
-    padding: 10px;
-    background-color: rgba(21, 162, 96, 0.406);
+.contato p img {
+  vertical-align: middle;
 }
 
-.historico-profissional > h2{
-    
-    padding: 10px;
-    background-color: rgba(21, 162, 96, 0.406);
+.historico-academico > h3 {
+  margin-top: 12px;
 }
 
-img{
-    margin: 0;
+.historico-academico > ul {
+  list-style-type: none;
 }
 
-h2 > img {
-    margin-right: 10px;
-    padding: 0;
-    
+.historico-academico > h2 {
+  padding: 10px;
+  background-color: rgba(21, 162, 96, 0.406);
 }
+
+.historico-academico > h2 > img {
+  width: 24px;
+}
+
+h4 {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: unset;
+}
+
+span {
+  font-weight: bold;
+  margin: 0;
+}
+
+.space-profissao {
+  margin-bottom: 0px;
+}
+
+.space-conteudo {
+  margin-top: 0px;
+}
+
+.class-gray {
+  font-family: normal;
+  color: #6b6969;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+hr {
+  width: 8px;
+  margin-right: 21px;
+  background-color: rgba(21, 162, 96, 0.406);
+  border: unset;
+}
+
+.historico-profissional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.historico-profissional > h3 {
+  margin-top: 18px;
+}
+
+.historico-profissional > h2 {
+  margin-top: 0px !important;
+  padding: 10px;
+  background-color: rgba(21, 162, 96, 0.406);
+}
+
+.historico-profissional img {
+  margin: 0;
+  height: 25px;
+}
+
+.fiap-hcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.fiap-hcode > div {
+  width: 50%;
+}
+
+/*------------MEDIA QUERIES------------*/
+@media screen and (max-width: 945px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #coluna1,
+  #coluna2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .nome h1 {
+    font-size: 30px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
